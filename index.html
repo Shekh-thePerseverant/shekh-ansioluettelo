@@ -10,20 +10,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- ===== Easy-to-edit content (all images embedded as base64) ===== -->
   <script>
-    /* You only edit inside window.CV = { ... } */
+    // ===== Edit your content here. Images optional — there are fallbacks. =====
     window.CV = {
       name: "Shekh Golam Rahman",
+      initials: "SGR",
       location: "Tampere, Suomi",
       email: "grahmanmba@gmail.com",
       linkedin: "https://www.linkedin.com/in/shekh-g-rahman/",
       tagline: "Kokenut kirjanpitäjä • AI-innostunut • Kestävän kehityksen puolestapuhuja",
-      summary:
-        "Olen kokenut kirjanpitäjä ja taloushallinnon ammattilainen. Minulla on yli 12 vuoden kokemus kirjanpidosta, verotuksesta ja talousraportoinnista. Tunnen suomalaisen kirjanpidon perusprosessit ja ALV-käytännöt. Olen tarkka, päättäväinen ja ratkaisukeskeinen. Etsin aktiivisesti kirjanpidon ja verotuksen tehtäviä Suomessa. Kiinnostukseni on myös tekoälyssä ja kiertotaloudessa.",
+      avatar: "assets/img/profile.jpg",           // optional; fallback shows initials
+      hyvaLogo: "assets/img/hyva-logo.jpg",       // optional
+      juteTote: "assets/img/jute-tote.jpg",       // optional
 
+      summary: "Olen kokenut kirjanpitäjä ja taloushallinnon ammattilainen. Minulla on yli 12 vuoden kokemus kirjanpidosta, verotuksesta ja talousraportoinnista. Tunnen suomalaisen kirjanpidon perusprosessit ja ALV-käytännöt. Olen tarkka, päättäväinen ja ratkaisukeskeinen. Etsin aktiivisesti kirjanpidon ja verotuksen tehtäviä Suomessa. Kiinnostukseni on myös tekoälyssä ja kiertotaloudessa.",
       skills: [
         "Kirjanpito ja verotus Suomessa (ALV, tase, tuloslaskelma)",
         "Talousraportointi, tilinpäätöksen valmistelu",
@@ -32,12 +33,7 @@
         "Tekoälyn perusteet ja datan tarkastelu",
         "Viestintä, tiimityö, ongelmanratkaisu"
       ],
-      languages: [
-        "Suomi — A2 (perustaso, jatkuva oppiminen)",
-        "Englanti — erinomainen",
-        "Bengali — äidinkieli"
-      ],
-
+      languages: ["Suomi — A2 (perustaso, jatkuva oppiminen)","Englanti — erinomainen","Bengali — äidinkieli"],
       projects: [
         {
           title: "Haastis-Palaute — Älykäs rekrytointipalautetyökalu",
@@ -49,94 +45,42 @@
           title: "Hyvä Juttu — Kestävät juuttikassit Suomessa",
           desc: "Hanke vähentää kertakäyttömuovia ja tukee kestävää kulutusta juuttikasseilla.",
           media: [
-            { src: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..."+""+
-"{{HYVA_LOGO_B64}}", alt: "Hyvä Juttu logo" },
-            { src: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..."+""+
-"{{JUTE_TOTE_B64}}", alt: "Juuttikassi" }
+            { src: null, alt: "Hyvä Juttu logo", fallbackKey: "hyvaLogo" },
+            { src: null, alt: "Juuttikassi", fallbackKey: "juteTote" }
           ]
         }
       ],
-
       references: [
         { name: "Juho Niittykunnas", role: "Yrittäjä | Kirjanpito & Rahoitus, Tilitoimisto Alttum", phone: "+358 40 035 3403", email: "juho@alttum.fi" },
         { name: "Joonas Kemppainen", role: "COO, Demola Global", phone: "+358 50 529 1845", email: "joonas@demola.net" }
       ],
-
       experience: [
-        {
-          org: "Tribe Tampere",
-          role: "Fellowship-jäsen",
-          place: "Tampere",
-          period: "03/2025 – nykyinen",
-          bullets: [
-            "Opin tekoälyn, kestävän liiketoiminnan ja rahoituksen käytännön sovelluksia.",
-            "Tuen alkuvaiheen tiimejä talouden ja mallinnuksen kysymyksissä.",
-            "Verkostoidun Tampereen startup-ekosysteemissä."
-          ]
-        },
-        {
-          org: "Tilitoimisto Alttum",
-          role: "Kieli- ja kirjanpitoharjoittelija",
-          place: "Tampere",
-          period: "08/2025 – 09/2025",
-          bullets: [
-            "Suomalaisen kirjanpidon rutiinit, ALV-raportointi ja täsmäytykset.",
-            "Veroilmoituslomakkeet (lomake 5), varallisuuslaskelmat.",
-            "Pienyritysten kirjausten tarkistus ja raportointi."
-          ]
-        },
-        {
-          org: "Demola Global",
-          role: "Projektitiimin jäsen (AI)",
-          place: "Tampere",
-          period: "02/2025 – 04/2025",
-          bullets: [
-            "AI-pohjainen ratkaisu työnhakuprosessin kehittämiseen.",
-            "Kansainvälinen tiimityö ja projektikäytännöt."
-          ]
-        },
-        {
-          org: "AGRO MATE",
-          role: "Manager (Accounts & Administration)",
-          place: "Dhaka",
-          period: "09/2023 – 08/2024",
-          bullets: ["Kirjanpito, ALV, palkanlaskenta ja pankkien täsmäytys."]
-        },
-        {
-          org: "FARR Ceramics Ltd",
-          role: "Deputy Manager (Accounts & Finance)",
-          place: "Dhaka",
-          period: "07/2018 – 08/2023",
-          bullets: ["Tuloslaskelma ja tase, ALV-laskelmat, veroilmoitukset ja tilinpäätös."]
-        },
-        {
-          org: "Israq Spinning Mills Ltd",
-          role: "Assistant Manager / Senior Executive",
-          place: "Dhaka",
-          period: "04/2016 – 07/2018",
-          bullets: ["Kuukausiraportit ja tilien täsmäytys ERP-ympäristössä."]
-        },
-        {
-          org: "Alltex Industries Ltd",
-          role: "Officer (Accounts & Finance)",
-          place: "Dhaka",
-          period: "04/2014 – 03/2016",
-          bullets: ["Päiväkirjamerkinnät, kirjanpidon ylläpito (Excel, Tally ERP 9)."]
-        },
-        {
-          org: "Arfan Engineering Works",
-          role: "Junior Accountant",
-          place: "Dhaka",
-          period: "07/2012 – 03/2014",
-          bullets: ["Myynti- ja ostoreskontrat, palkanlaskenta, kassakirjanpito."]
-        }
+        { org: "Tribe Tampere", role: "Fellowship-jäsen", place: "Tampere", period: "03/2025 – nykyinen",
+          bullets: ["Opin tekoälyn, kestävän liiketoiminnan ja rahoituksen käytännön sovelluksia.",
+                    "Tuen alkuvaiheen tiimejä talouden ja mallinnuksen kysymyksissä.",
+                    "Verkostoidun Tampereen startup-ekosysteemissä."] },
+        { org: "Tilitoimisto Alttum", role: "Kieli- ja kirjanpitoharjoittelija", place: "Tampere", period: "08/2025 – 09/2025",
+          bullets: ["Suomalaisen kirjanpidon rutiinit, ALV-raportointi ja täsmäytykset.",
+                    "Veroilmoituslomakkeet (lomake 5), varallisuuslaskelmat.",
+                    "Pienyritysten kirjausten tarkistus ja raportointi."] },
+        { org: "Demola Global", role: "Projektitiimin jäsen (AI)", place: "Tampere", period: "02/2025 – 04/2025",
+          bullets: ["AI-pohjainen ratkaisu työnhakuprosessin kehittämiseen.",
+                    "Kansainvälinen tiimityö ja projektikäytännöt."] },
+        { org: "AGRO MATE", role: "Manager (Accounts & Administration)", place: "Dhaka", period: "09/2023 – 08/2024",
+          bullets: ["Kirjanpito, ALV, palkanlaskenta ja pankkien täsmäytys."] },
+        { org: "FARR Ceramics Ltd", role: "Deputy Manager (Accounts & Finance)", place: "Dhaka", period: "07/2018 – 08/2023",
+          bullets: ["Tuloslaskelma ja tase, ALV-laskelmat, veroilmoitukset ja tilinpäätös."] },
+        { org: "Israq Spinning Mills Ltd", role: "Assistant Manager / Senior Executive", place: "Dhaka", period: "04/2016 – 07/2018",
+          bullets: ["Kuukausiraportit ja tilien täsmäytys ERP-ympäristössä."] },
+        { org: "Alltex Industries Ltd", role: "Officer (Accounts & Finance)", place: "Dhaka", period: "04/2014 – 03/2016",
+          bullets: ["Päiväkirjamerkinnät, kirjanpidon ylläpito (Excel, Tally ERP 9)."] },
+        { org: "Arfan Engineering Works", role: "Junior Accountant", place: "Dhaka", period: "07/2012 – 03/2014",
+          bullets: ["Myynti- ja ostoreskontrat, palkanlaskenta, kassakirjanpito."] }
       ],
-
       education: [
         { school: "National University, Bangladesh", title: "Master’s in Business Studies (2010)" },
         { school: "National University, Bangladesh", title: "Bachelor’s in Business Studies (2009)" }
       ],
-
       certs: [
         "Certificate in Accounting, University of the People (2022)",
         "QuickBooks Certified ProAdvisor, Intuit (2023)",
@@ -145,22 +89,21 @@
         "Accounting System & Information Management, edX (2021)",
         "IELTS, British Council (2023)"
       ],
-
       otherCerts: [
         "Hygieniapassi, Ruokavirasto (2025–)",
         "Ajokortti (A, B), Traficom (2025–2035)"
-      ],
-
-      /* === Full profile photo as base64 (embedded) === */
-      avatarDataURI: "data:image/jpeg;base64,{{PROFILE_B64}}"
+      ]
     };
   </script>
 
   <!-- ===== Header ===== -->
-  <header class="site-header noprint">
+  <header class="site-header">
     <div class="container header-inner">
       <div class="id">
-        <img id="cv-avatar" class="avatar elevate" alt="Profiilikuva" />
+        <div class="avatar-wrap">
+          <img id="cv-avatar" class="avatar" alt="Profiilikuva" onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='grid';">
+          <div id="avatar-fallback" class="avatar-fallback" aria-hidden="true"></div>
+        </div>
         <div>
           <h1 id="cv-name" class="reveal"></h1>
           <p class="tag reveal" id="cv-tagline"></p>
@@ -236,7 +179,7 @@
     </div>
   </footer>
 
-  <!-- ===== Renderer + tiny scroll animations ===== -->
+  <!-- ===== Render + scroll animation + fallbacks ===== -->
   <script>
     const $ = (s) => document.querySelector(s);
     const mountList = (el, arr) => { el.innerHTML = arr.map(x => `<li>${x}</li>`).join(""); };
@@ -244,8 +187,9 @@
 
     const cv = window.CV;
 
-    // Header & avatar
-    $('#cv-avatar').src = cv.avatarDataURI;
+    // Header content
+    const avatarEl = $('#cv-avatar');
+    if (cv.avatar) avatarEl.src = cv.avatar;
     $('#cv-name').textContent = cv.name;
     $('#cv-tagline').textContent = cv.tagline;
     $('#cv-location').textContent = cv.location;
@@ -253,13 +197,23 @@
     $('#cv-linkedin').textContent = 'linkedin.com/in/shekh-g-rahman'; $('#cv-linkedin').href = cv.linkedin;
     $('#cv-footer-name').textContent = cv.name;
 
+    // Fallback avatar with initials
+    const fallback = document.getElementById('avatar-fallback');
+    fallback.textContent = cv.initials || 'SGR';
+
     // Left
     $('#cv-summary').textContent = cv.summary;
     mountList($('#cv-skills'), cv.skills);
     mountList($('#cv-languages'), cv.languages);
 
     mountCards($('#cv-projects'), cv.projects, p => {
-      const media = (p.media || []).map(m => `<img class="thumb" src="${m.src}" alt="${m.alt||''}" />`).join("");
+      const media = (p.media || []).map(m => {
+        const src = m.src || (cv[m.fallbackKey] || '');
+        const alt = m.alt || '';
+        // If src empty, return a placeholder box
+        if (!src) return `<div class="img-ph">${alt}</div>`;
+        return `<img class="thumb" src="${src}" alt="${alt}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-ph',innerText:'${alt}'}))">`;
+      }).join("");
       const cta = p.cta ? `<p><a class="btn solid" href="${p.cta.href}" target="_blank" rel="noopener">${p.cta.text}</a></p>` : "";
       return `
         <article class="project-card">
