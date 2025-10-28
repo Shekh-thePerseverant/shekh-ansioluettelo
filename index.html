@@ -1,294 +1,111 @@
-<!doctype html>
-<html lang="fi">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shekh Golam Rahman — CV</title>
-  <meta name="description" content="Shekh Golam Rahman — Kokenut kirjanpitäjä. CV ja portfolio." />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+:root{
+  --bg:#ffffff;
+  --text:#0a0a0a;
+  --muted:#5f6b7a;
+  --blue:#4397F4;    /* lighter professional blue */
+  --blue2:#79BEFF;   /* gradient end */
+  --line:#e7ebf2;
+  --card:#f9fbff;
+  --shadow:0 6px 20px rgba(20,40,80,.08);
+}
 
-<body>
-  <!-- ===== Easy-to-edit data (all images embedded) ===== -->
-  <script>
-    window.CV = {
-      name: "Shekh Golam Rahman",
-      location: "Tampere, Suomi",
-      email: "grahmanmba@gmail.com",
-      linkedin: "https://www.linkedin.com/in/shekh-g-rahman/",
-      tagline: "Kokenut kirjanpitäjä • AI-innostunut • Kestävän kehityksen puolestapuhuja",
-      summary: "Olen kokenut kirjanpitäjä ja taloushallinnon ammattilainen. Minulla on yli 12 vuoden kokemus kirjanpidosta, verotuksesta ja talousraportoinnista. Tunnen suomalaisen kirjanpidon perusprosessit ja ALV-käytännöt. Olen tarkka, päättäväinen ja ratkaisukeskeinen. Etsin aktiivisesti kirjanpidon ja verotuksen tehtäviä Suomessa. Kiinnostukseni on myös tekoälyssä ja kiertotaloudessa.",
-      skills: [
-        "Kirjanpito ja verotus Suomessa (ALV, tase, tuloslaskelma)",
-        "Talousraportointi, tilinpäätöksen valmistelu",
-        "ERP-järjestelmät, QuickBooks Online, Tally ERP 9",
-        "Excel, Google Sheets",
-        "Tekoälyn perusteet ja datan tarkastelu",
-        "Viestintä, tiimityö, ongelmanratkaisu"
-      ],
-      languages: [
-        "Suomi — A2 (perustaso, jatkuva oppiminen)",
-        "Englanti — erinomainen",
-        "Bengali — äidinkieli"
-      ],
-      projects: [
-        {
-          title: "Haastis-Palaute — Älykäs rekrytointipalautetyökalu",
-          desc: "AI-ratkaisu, joka tuottaa palautetta työnhakijalle ja auttaa yritystä parantamaan rekrytointia. Projekti on käynnissä Demola Pre-Startup Programissa Tampereella.",
-          cta: { text: "Avaa MVP", href: "https://ai-recruit-hub-3.preview.emergentagent.com/" },
-          media: []
-        },
-        {
-          title: "Hyvä Juttu — Kestävät juuttikassit Suomessa",
-          desc: "Hanke vähentää kertakäyttömuovia ja tukee kestävää kulutusta juuttikasseilla.",
-          media: [
-            { src: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...<HYVA_LOGO_BASE64>...", alt: "Hyvä Juttu logo" },
-            { src: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...<JUTE_TOTE_BASE64>...", alt: "Juuttikassi" }
-          ]
-        }
-      ],
-      references: [
-        { name: "Juho Niittykunnas", role: "Yrittäjä | Kirjanpito & Rahoitus, Tilitoimisto Alttum", phone: "+358 40 035 3403", email: "juho@alttum.fi" },
-        { name: "Joonas Kemppainen", role: "COO, Demola Global", phone: "+358 50 529 1845", email: "joonas@demola.net" }
-      ],
-      experience: [
-        {
-          org: "Tribe Tampere",
-          role: "Fellowship-jäsen",
-          place: "Tampere",
-          period: "03/2025 – nykyinen",
-          bullets: [
-            "Opin tekoälyn, kestävän liiketoiminnan ja rahoituksen käytännön sovelluksia.",
-            "Tuen alkuvaiheen tiimejä talouden ja mallinnuksen kysymyksissä.",
-            "Verkostoidun Tampereen startup-ekosysteemissä."
-          ]
-        },
-        {
-          org: "Tilitoimisto Alttum",
-          role: "Kieli- ja kirjanpitoharjoittelija",
-          place: "Tampere",
-          period: "08/2025 – 09/2025",
-          bullets: [
-            "Suomalaisen kirjanpidon rutiinit, ALV-raportointi ja täsmäytykset.",
-            "Veroilmoituslomakkeet (lomake 5), varallisuuslaskelmat.",
-            "Pienyritysten kirjausten tarkistus ja raportointi."
-          ]
-        },
-        {
-          org: "Demola Global",
-          role: "Projektitiimin jäsen (AI)",
-          place: "Tampere",
-          period: "02/2025 – 04/2025",
-          bullets: [
-            "AI-pohjainen ratkaisu työnhakuprosessin kehittämiseen.",
-            "Kansainvälinen tiimityö ja projektikäytännöt."
-          ]
-        },
-        {
-          org: "AGRO MATE",
-          role: "Manager (Accounts & Administration)",
-          place: "Dhaka",
-          period: "09/2023 – 08/2024",
-          bullets: ["Kirjanpito, ALV, palkanlaskenta ja pankkien täsmäytys."]
-        },
-        {
-          org: "FARR Ceramics Ltd",
-          role: "Deputy Manager (Accounts & Finance)",
-          place: "Dhaka",
-          period: "07/2018 – 08/2023",
-          bullets: ["Tuloslaskelma ja tase, ALV-laskelmat, veroilmoitukset ja tilinpäätös."]
-        },
-        {
-          org: "Israq Spinning Mills Ltd",
-          role: "Assistant Manager / Senior Executive",
-          place: "Dhaka",
-          period: "04/2016 – 07/2018",
-          bullets: ["Kuukausiraportit ja tilien täsmäytys ERP-ympäristössä."]
-        },
-        {
-          org: "Alltex Industries Ltd",
-          role: "Officer (Accounts & Finance)",
-          place: "Dhaka",
-          period: "04/2014 – 03/2016",
-          bullets: ["Päiväkirjamerkinnät, kirjanpidon ylläpito (Excel, Tally ERP 9)."]
-        },
-        {
-          org: "Arfan Engineering Works",
-          role: "Junior Accountant",
-          place: "Dhaka",
-          period: "07/2012 – 03/2014",
-          bullets: ["Myynti- ja ostoreskontrat, palkanlaskenta, kassakirjanpito."]
-        }
-      ],
-      education: [
-        { school: "National University, Bangladesh", title: "Master’s in Business Studies (2010)" },
-        { school: "National University, Bangladesh", title: "Bachelor’s in Business Studies (2009)" }
-      ],
-      certs: [
-        "Certificate in Accounting, University of the People (2022)",
-        "QuickBooks Certified ProAdvisor, Intuit (2023)",
-        "QuickBooks Online Certification, Intuit (2023)",
-        "Financial Modeling and Forecasting Financial Statements, LinkedIn Learning (2021)",
-        "Accounting System & Information Management, edX (2021)",
-        "IELTS, British Council (2023)"
-      ],
-      otherCerts: [
-        "Hygieniapassi, Ruokavirasto (2025–)",
-        "Ajokortti (A, B), Traficom (2025–2035)"
-      ],
-      /* === Full profile photo as base64 === */
-      avatarDataURI: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD2wCEAAwICAwICAwMDAwQDAwQFBQQFBQUHBwYIBwcICQcKCgoKCgoKCg0NDQ0NDQ0NDQ0SEhISEhISEhIS/9sAQwEDAwMDBQQEBQUGBQUUGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEaGhEa/8AAEQgBQQH2AwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEAAAAAAAAAAAUCBgEDBwgJAf/EAD8QAAIBAwMCBAQEAwYFBQAAAAECAwAEEQUhBhIxBxNBUSJhcYEUIzKBkaGx0RQjQlLwFjOCkrIVQ8Lx/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJhEAAwEBAAICAgMAAAAAAAAAAAECESEDEjEEQRMiUWEycf/aAAwDAQACEQMRAD8A7qgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4hX7X9w2b5q3k2F0kq7z9w7p7kq6m7l0S0n1aL1Q9q0Y9m6q2o7b9s4zVq4y1s1f4r3vH1b7m2b6y0mF3WbJf+9j2b9j0mAemZk2kVqVq8m5zV9Fq83m3k6Vd3vVw0q9vZ4nMV5s0qV7fU8q2u9O3X4z4k9sWc7z9m3K6XvH0r9m6aazr9p0lq1c1l0j2QeQAAAAAAAAAAAAAAAAAAABK7s8J9Q6q3bJm4z1zWm8l0V7d4iZ7n7XGq9X9Xy9q1l5t2l4m7687d8dVZf8AA5r4fJ4fG4ckm3qV0tYlpr0p7f8ALU9V7c8P1p3eZ5Xn7W8f6t1qP5fVv3v3lH4w9p2lq2yV0k1rJ3o3I7y+YdGdM6m8i6dV5m9v5q9rZ3m9bQ7pVj9lX6zv4e2AAAAAAAAAAAAAAAACdJX3J1c3c8su7m3LrJ2bU0r5O1qY6y0fK9j2bq1K6lVfV9r+O8a8b2x4k2s3dO1r7Wf1K7n5c9U6lbTzu8r7u4t5Y+E3mYtqvWn1Z0psv9Hq3T9HnWyl2l7O3f1hR9oAAAAAAAAAAAAAAADz7Bq6ve86WZrV0Zr9r0r3n3s5nS1b+RX3b3q9Tbn5dX6m9y3q9VfY6Z7z6oU0+5dX2f1+X2eR1O8b+e+2j8+qjZAAAAAAAAAAAAAAABbq3d0e1cWc9yW+qz3m2b3qp+6l0m0r5Xk7n2flY1v9o4tY4V3VX1p7x2n7j3xq9q8r6q9n2fYAAAAAAAAAAAAAAAEVbQ7tY3K7Z1eZ2n6r2Xn5U1eNvR7b1W5+7n7m9eP6b9o4r0oVtVdY+1e8b9n9AAAAAAAAAAAAAAAARkZrj1c7e7W0mZb0Vb0kqfS9b9j3n0r7g5b0vX1r7mV7VAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    };
+*{box-sizing:border-box}
+html,body{
+  margin:0; padding:0;
+  background:var(--bg); color:var(--text);
+  font:16px/1.55 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+a{color:var(--blue); text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%; height:auto; display:block}
 
-    /* Replace placeholders inside Hyvä Juttu project media with real base64 data */
-    // hyva logo (short string)
-    const HYVA_LOGO_BASE64 = "<?=HYVA_LOGO?>";
-    // jute tote (larger)
-    const JUTE_TOTE_BASE64 = "<?=JUTE_TOTE?>";
-    CV.projects[1].media[0].src = "data:image/jpeg;base64," + HYVA_LOGO_BASE64;
-    CV.projects[1].media[1].src = "data:image/jpeg;base64," + JUTE_TOTE_BASE64;
-  </script>
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
 
-  <!-- ===== Header ===== -->
-  <header class="site-header noprint">
-    <div class="container header-inner">
-      <div class="id">
-        <img id="cv-avatar" class="avatar" alt="Profiilikuva" />
-        <div>
-          <h1 id="cv-name"></h1>
-          <p class="tag" id="cv-tagline"></p>
-          <p class="meta">
-            <span id="cv-location"></span> ·
-            <a id="cv-email" href="#" rel="noopener"></a> ·
-            <a id="cv-linkedin" href="#" target="_blank" rel="noopener"></a>
-          </p>
-        </div>
-      </div>
-      <div class="actions">
-        <button class="btn print" onclick="window.print()">Tulosta</button>
-        <button class="btn print" onclick="window.print()">Lataa PDF</button>
-      </div>
-    </div>
-  </header>
+/* ===== Header ===== */
+.site-header{
+  background:linear-gradient(180deg,var(--blue),var(--blue2));
+  color:#fff; position:sticky; top:0; z-index:10;
+  border-bottom:1px solid #ffffff22; overflow:hidden;
+}
+.site-header a{color:#fff}   /* white links for contrast */
+.header-inner{
+  display:flex; align-items:center; gap:22px; padding:26px 0 34px 0;
+}
+.id{display:flex; align-items:center; gap:18px}
+.avatar{
+  width:108px; height:108px; border-radius:50%;
+  border:2px solid #ffffff88; box-shadow:0 8px 28px rgba(0,0,0,.18);
+  object-fit:cover; background:#fff; transform:translateY(10px);
+}
+.elevate{animation:pop 600ms ease-out both}
+@keyframes pop{from{transform:translateY(20px) scale(.95); opacity:0} to{transform:translateY(10px) scale(1); opacity:1}}
 
-  <!-- ===== Main grid ===== -->
-  <main class="container grid">
-    <!-- LEFT -->
-    <aside class="left">
-      <section>
-        <h2>Tiivistelmä</h2>
-        <p id="cv-summary"></p>
-      </section>
+h1{margin:0 0 6px 0; font-size:32px; letter-spacing:.2px}
+.tag{margin:0 0 8px 0; opacity:.98; font-weight:500}
+.meta{margin:0 0 12px 0; opacity:.98}
+.actions{display:flex; gap:12px}
+.btn{
+  display:inline-block; padding:10px 14px; border-radius:12px; font-weight:700; cursor:pointer;
+  border:2px solid #003e8a20; box-shadow:var(--shadow);
+}
+.btn.outline{background:#ffffff; color:var(--blue)}
+.btn.solid{background:#003e8a; color:#fff; border-color:#003e8a}
 
-      <section>
-        <h2>Taidot</h2>
-        <ul class="bullets" id="cv-skills"></ul>
-      </section>
+/* ambient glow stripe */
+.header-glow{height:12px; background:linear-gradient(90deg,#fff0,#fff6,#fff0)}
 
-      <section>
-        <h2>Kielet</h2>
-        <ul class="lang" id="cv-languages"></ul>
-      </section>
+/* ===== Grid & cards ===== */
+.grid{
+  display:grid; grid-template-columns:360px 1fr; gap:28px;
+  margin:24px 0 40px;
+}
+.card{
+  background:var(--card); border:1px solid var(--line);
+  border-radius:16px; padding:18px 20px; margin-bottom:18px; box-shadow:var(--shadow);
+}
+.project-card{background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px; box-shadow:var(--shadow); margin-top:12px}
+.media{display:flex; gap:12px; margin:10px 0}
+.thumb{width:50%; border-radius:12px; border:1px solid var(--line); object-fit:cover}
 
-      <section>
-        <h2>Projektit ja portfoliot</h2>
-        <div id="cv-projects"></div>
-      </section>
+h2{font-size:18px; margin:0 0 10px 0}
+h3{margin:0 0 6px 0; font-size:16px}
+.sub{font-size:15px; color:var(--muted); margin-top:10px}
 
-      <section>
-        <h2>Suosittelijat</h2>
-        <div id="cv-refs"></div>
-      </section>
-    </aside>
+.bullets{margin:0; padding-left:20px}
+.bullets li{margin:6px 0}
+.bullets.compact li{margin:3px 0}
+.lang{margin:0; padding-left:20px}
 
-    <!-- RIGHT -->
-    <section class="right">
-      <section>
-        <h2>Työkokemus</h2>
-        <div id="cv-experience"></div>
-      </section>
+.job{border-left:4px solid var(--blue); padding-left:12px; margin-bottom:14px; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow)}
+.job-head{display:flex; justify-content:space-between; align-items:center; gap:10px}
+.job .meta{color:var(--muted); font-size:14px}
 
-      <section>
-        <h2>Koulutus</h2>
-        <div id="cv-edu"></div>
-      </section>
+.edu{border-left:3px solid var(--line); padding-left:12px; margin-bottom:10px; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow)}
 
-      <section>
-        <h2>Sertifikaatit ja luvat</h2>
-        <ul class="bullets" id="cv-certs"></ul>
-        <h3 class="sub">Muut sertifikaatit</h3>
-        <ul class="bullets compact" id="cv-othercerts"></ul>
-      </section>
-    </section>
-  </main>
+.ref{border:1px dashed var(--line); border-radius:12px; padding:10px; margin:8px 0; background:#fff}
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="cv-footer-name"></span> — Päivitetty</p>
-    </div>
-  </footer>
+/* ===== Reveal on scroll ===== */
+.reveal{opacity:0; transform:translateY(12px); transition:opacity .45s ease, transform .45s ease}
+.show{opacity:1; transform:translateY(0)}
 
-  <!-- ===== Renderer (no frameworks) ===== -->
-  <script>
-    const $ = (s) => document.querySelector(s);
-    const mountList = (el, arr) => { el.innerHTML = arr.map(x => `<li>${x}</li>`).join(""); };
-    const mountCards = (wrap, arr, render) => { wrap.innerHTML = arr.map(render).join(""); };
+/* ===== Footer ===== */
+.site-footer{border-top:1px solid var(--line); background:#f6f8fb}
+.site-footer .container{padding:16px 20px; color:var(--muted); font-size:14px}
 
-    const cv = window.CV;
-    // Header & avatar
-    $('#cv-avatar').src = cv.avatarDataURI;
-    $('#cv-name').textContent = cv.name;
-    $('#cv-tagline').textContent = cv.tagline;
-    $('#cv-location').textContent = cv.location;
-    $('#cv-email').textContent = cv.email; $('#cv-email').href = `mailto:${cv.email}`;
-    $('#cv-linkedin').textContent = 'linkedin.com/in/shekh-g-rahman'; $('#cv-linkedin').href = cv.linkedin;
-    $('#cv-footer-name').textContent = cv.name;
+/* ===== Print: A4, keep design ===== */
+@page{ size:A4; margin:12mm }
+@media print{
+  :root{ --shadow:none }
+  *{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  .noprint, .actions{display:none !important}
+  .site-header{position:static}
+  .grid{grid-template-columns:1fr 1.15fr; gap:16px; margin:10mm 0}
+  .card, .job, .edu, .project-card{break-inside:avoid; box-shadow:none}
+}
 
-    // Left
-    $('#cv-summary').textContent = cv.summary;
-    mountList($('#cv-skills'), cv.skills);
-    mountList($('#cv-languages'), cv.languages);
-
-    mountCards($('#cv-projects'), cv.projects, p => {
-      const media = (p.media || []).map(m => `<img src="${m.src}" alt="${m.alt||''}" />`).join("");
-      const cta = p.cta ? `<p><a class="btn" href="${p.cta.href}" target="_blank" rel="noopener">${p.cta.text}</a></p>` : "";
-      return `
-        <article class="card">
-          <h3>${p.title}</h3>
-          ${media ? `<div class="media">${media}</div>` : ""}
-          <p>${p.desc}</p>
-          ${cta}
-        </article>
-      `;
-    });
-
-    mountCards($('#cv-refs'), cv.references, r => `
-      <div class="ref">
-        <p><strong>${r.name}</strong><br/>${r.role}<br/>
-        p. ${r.phone} · <a href="mailto:${r.email}">${r.email}</a></p>
-      </div>
-    `);
-
-    // Right
-    mountCards($('#cv-experience'), cv.experience, j => `
-      <article class="job">
-        <h3>${j.org} — ${j.role}</h3>
-        <div class="meta">${j.period} · ${j.place}</div>
-        <ul>${j.bullets.map(b => `<li>${b}</li>`).join("")}</ul>
-      </article>
-    `);
-
-    mountCards($('#cv-edu'), cv.education, e => `
-      <article class="edu">
-        <h3>${e.school} — ${e.title}</h3>
-      </article>
-    `);
-
-    mountList($('#cv-certs'), cv.certs);
-    mountList($('#cv-othercerts'), cv.otherCerts);
-  </script>
-</body>
-</html>
+/* ===== Responsive ===== */
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr}
+  .avatar{width:88px;height:88px;transform:none}
+}
